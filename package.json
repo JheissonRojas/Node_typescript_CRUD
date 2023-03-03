@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-
   "scripts": {
     "dev": "ts-node-dev src/index.ts",
     "lint": "ts-standard",
@@ -21,12 +20,17 @@
     "typescript": "4.9.4"
   },
   "dependencies": {
-    "express": "4.18.2"
+    "express": "4.18.2",
+    "mongoose": "^7.0.0",
+    "reflect-metadata": "^0.1.13",
+    "typegoose": "^5.9.1"
   },
   "eslintConfig": {
-    "parserOptions":{
+    "parserOptions": {
       "project": "./tsconfig.json"
     },
-    "extends": ["./node_modules/ts-standard/eslintrc.json"]
+    "extends": [
+      "./node_modules/ts-standard/eslintrc.json"
+    ]
   }
 }
